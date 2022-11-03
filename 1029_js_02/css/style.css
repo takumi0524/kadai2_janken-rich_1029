@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+html{
+    font-size: 16px;
+}
+
+body{
+    /* max-width: 1200px; */
+    margin: auto;
+    color: #e6b422;
+    /* background-color:#000000;      */
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+
+    /* 背景画像 */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("/image/piano_kenban2.jpg");
+    background-color: rgba(0,0,0,0.5); */
+}
+ul {
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* *********************** */
+/* ピアノ背景 */
+.background{
+    width: 100%;
+    height: 100vh; /*全画面表示 */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("/image/piano_kenban2.jpg");
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.piano_no_tobira{
+    text-align: center;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 36px;
+    padding: 200px 0 30px 0;
+}
+
+.detail{
+    font-size: 20px;
+    line-height: 36px;
+}
+.detail_margin{
+    margin:30px 0 30px 0 ;
+}
+
+
+
+/* ポップアップ */
+#demo-style {
+    background-color: #e6b422;
+    color: #fff;
+    display: block;
+    border-radius: 200px;
+    max-width: 500px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto 80px;
+    font-size: 1.2em;
+}
+  
+.open {
+	cursor:pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
+}
+#pop-up {
+	display: none; /* label でコントロールするので input は非表示に */
+}
+.overlay {
+	display: none; /* input にチェックが入るまでは非表示に */
+}
+#pop-up:checked + .overlay {
+	display: block;
+	z-index: 9999;
+	background-color: #00000070;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+.window {
+	width: 90vw;
+	max-width: 700px;
+	height: 700px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text {
+	font-size: 18px;
+	margin: 0;
+}
+.close {
+	cursor:pointer;
+	position: absolute;
+	top: 4px;
+	right: 20px;
+	font-size: 30px;
+}
+.question{
+    margin: 20px 0 10px 0;
+}
+
+.btn_answer {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;  
+    border-radius: 5px;
+    background-color: #e6b422;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .osusumeno1kyoku{
+    border-radius: 5px;
+    background-color: #5c9291;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+/* .bgimg {
+    background-image: url(image/piano_kenban2.jpg);
+} */
+
+
+
+
+
+
+
+
+.janken{
+    justify-content: center;
+    text-align:center;
+}
+.title_janken{
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+    /* justify-content: center;
+    text-align:center; */
+    padding: 30px 30px;
+}
+.detail_janken{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    /* justify-content: center;
+    text-align:center; */
+    padding: 0 30px;
+}
+
+
+/* じゃんけん画像 */
+.janken_image{
+    display: flex;
+    justify-content: center;
+}
+
+.rock{
+    max-width: 200px;
+    padding: 30px 40px 30px 0;
+}
+.scissors{
+    max-width: 200px;
+    padding: 30px 0 30px 0;
+}
+.paper{
+    max-width: 200px;
+    padding: 30px 0 30px 40px;
+}
+
+.title_kekka{
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align:center;
+    padding: 30px 30px;
+}
+.kekka{
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align:center;
+    padding: 30px 30px;
+}
+.reload{
+    color: #333333;
+    font-size: 20px;
+    font-weight: normal;
+    justify-content: center;
+    text-align:center;
+}
+
+.img_center{
+    display: flex;
+    justify-content: center;
+}
+.imgTest{
+    max-width: 400px;
+    max-height: 280px;
+}
+.revenge{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+.btn-reset{
+    max-width: 150px;
+    max-height: 30px;
+
+}
+
+
+/* .slot {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    border : solid 1px #333 ;
+}
+.slot-frame {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border : solid 1px #333 ;
+}
+.reels {
+    width: 100%;
+    position:absolute;
+}
+/* .reels:nth-child(1) {
+    left: 0;
+}
+.reels:nth-child(2) {
+    left: 33%;
+}
+.reels:nth-child(3) {
+    right: 0;
+} */
+/* .reel {
+    height: 270px;
+}
+.reel img {
+    display: block;
+    width: 93%;
+    margin: auto;
+} */ 
